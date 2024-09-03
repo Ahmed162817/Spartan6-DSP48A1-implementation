@@ -1,0 +1,9 @@
+vlib work
+
+vlog ff_with_mux_design.v DSP_design.v DSP_testbench.v
+
+vsim -voptargs=+acc work.spartan6_DSP_tb
+
+add wave *
+
+run -all
